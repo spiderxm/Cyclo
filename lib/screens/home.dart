@@ -1,3 +1,4 @@
+import 'package:cyclo/screens/shopping_cart.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:cyclo/customIcons/custom_drawer_icon.dart';
@@ -17,7 +18,7 @@ class Home extends StatelessWidget {
             size: 18,
             color: Colors.black,
           ),
-          onPressed: (){},
+          onPressed: () {},
           tooltip: 'Side Drawer',
         ),
         title: Center(
@@ -44,22 +45,35 @@ class Home extends StatelessWidget {
       ),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Color(0xffECEFF4),
+        showUnselectedLabels: true,
+        showSelectedLabels: false,
+        currentIndex: 1,
         items: [
+
           BottomNavigationBarItem(
               tooltip: 'Home',
               icon: Icon(
+                Icons.home_outlined,
+                size: 30,
+              ),
+              activeIcon: Icon(
                 Icons.home,
                 color: Color(0xffFF782D),
                 size: 30,
               ),
-              label: " "),
+              label: " Home "),
           BottomNavigationBarItem(
               tooltip: 'Shopping Cart',
               icon: Icon(
                 Icons.shopping_cart_outlined,
                 size: 30,
               ),
-              label: " ")
+              activeIcon: Icon(
+                Icons.shopping_cart,
+                color: Color(0xffFF782D),
+                size: 30,
+              ),
+              label: "Shopping Cart")
         ],
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
@@ -73,6 +87,7 @@ class Home extends StatelessWidget {
           color: Color(0xffFF782D),
         ),
       ),
+      body: Cart(),
     );
   }
 }
