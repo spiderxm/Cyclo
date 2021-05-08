@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:cyclo/customIcons/custom_drawer_icon.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -10,9 +11,14 @@ class Home extends StatelessWidget {
         elevation: 0,
         backgroundColor: Colors.white,
         bottomOpacity: 0,
-        leading: Icon(
-          FontAwesomeIcons.bars,
-          color: Colors.black,
+        leading: IconButton(
+          icon: Icon(
+            MyFlutterApp.drawer_icon,
+            size: 18,
+            color: Colors.black,
+          ),
+          onPressed: (){},
+          tooltip: 'Side Drawer',
         ),
         title: Center(
           child: Text(
@@ -43,7 +49,7 @@ class Home extends StatelessWidget {
               tooltip: 'Home',
               icon: Icon(
                 Icons.home,
-                color: Colors.orange,
+                color: Color(0xffFF782D),
                 size: 30,
               ),
               label: " "),
@@ -58,13 +64,13 @@ class Home extends StatelessWidget {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.black,
-        child: Tooltip(
-          message: 'WishList',
-          child: Icon(
-            FontAwesomeIcons.heart,
-            color: Color(0xffFF782D),
-          ),
+        tooltip: 'WishList',
+        onPressed: () {},
+        elevation: 8,
+        backgroundColor: Color(0xff171B27),
+        child: Icon(
+          FontAwesomeIcons.heart,
+          color: Color(0xffFF782D),
         ),
       ),
     );
