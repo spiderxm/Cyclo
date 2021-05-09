@@ -13,7 +13,7 @@ class UrlServices {
       );
     } else {
       Fluttertoast.showToast(
-          msg: "This is Center Short Toast",
+          msg: "There was some issue. Try again later",
           toastLength: Toast.LENGTH_SHORT,
           gravity: ToastGravity.SNACKBAR,
           timeInSecForIosWeb: 1,
