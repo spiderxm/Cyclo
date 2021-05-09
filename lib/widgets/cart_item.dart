@@ -147,15 +147,3 @@ class CartItem extends StatelessWidget {
     );
   }
 }
-
-// ListTile(
-// leading: Container(
-// color: Color(0xffF5F6F8),
-// child: Image.asset(cartItems[index].imageUrl, fit: BoxFit.contain,),
-// width: 90,
-// ),
-// minLeadingWidth: 100,
-// isThreeLine: true,
-
-// // trailing: IconButton(icon),
-// ),
