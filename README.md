@@ -6,16 +6,16 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[contributors-shield]: https://img.shields.io/github/contributors/spiderxm/Cyclo.svg?style=for-the-badge
+[contributors-url]: https://github.com/spiderxm/Cyclo/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[forks-url]: https://github.com/spiderxm/Cyclo/network/members
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[stars-url]: https://github.com/spiderxm/Cyclo/stargazers
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[issues-url]: https://github.com/spiderxm/Cyclo/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[license-url]: https://github.com/spiderxm/Cyclo/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: images/screenshot.png
@@ -24,7 +24,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/spiderxm/Cyclo">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://i.ibb.co/CWX43qD/Whats-App-Image-2021-05-09-at-3-59-19-PM.jpg" alt="Logo" width="80" height="80">
   </a>
 
   <h1 align="center" style="text-transform:uppercase;">Cyclo</h1>
@@ -57,7 +57,9 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li>
+    <a href="#usage">Usage</a>
+          </li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -67,16 +69,10 @@
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
+# Project Cyclo
 
-[![Product Name Screen Shot][product-screenshot]](url)
+<img src="https://i.ibb.co/Qf6x6gy/Whats-App-Image-2021-05-09-at-2-57-41-PM.jpg">
 
-Project vyakhya
-
-Here's why:
-
--
--
--
 
 ### Built With
 
@@ -101,15 +97,14 @@ Flutter SDK
    ```sh
    git clone https://github.com/spiderxm/Cyclo.git
    ```
-   <!-- 2. Install NPM packages
-      ```sh
-      npm install
-      ```
-2. Enter your API in `config.js`
-   ````JS
-   const API_KEY = 'ENTER YOUR API';
-   ``` -->
-   ````
+2. Install dependencies
+   ```sh
+   flutter pub get
+   ```
+3. Run app in debug mode
+    ```sh
+   flutter run
+    ```
 
 <!-- USAGE EXAMPLES -->
 
@@ -120,17 +115,12 @@ Use this space to show useful examples of how a project can be used. Additional 
 
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
-<!-- ROADMAP -->
-
-## Roadmap
-
-<!-- See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues). -->
-
 <!-- LICENSE -->
 
 ## License
 
 <!-- Distributed under the MIT License. See `LICENSE` for more information. -->
+Code copyright 2021 the authors. Code released under the MIT License.
 
 <!-- CONTACT -->
 
@@ -138,7 +128,7 @@ Use this space to show useful examples of how a project can be used. Additional 
 
 Anant Verma - [linkedIn/abstrxtinfinity](https://www.linkedin.com/in/abstrxtinfinity) - anantverma2001@gmail.com
 
-Mrigank Anand - [linkedIn/your_username](https://linkedin.com/in/your_username) - email@test.com
+Mrigank Anand - [linkedIn/mrigankanand](https://www.linkedin.com/in/mrigankanand) - mrigank.anand52@gmail.com
 
 Project Link: [Github](https://github.com/spiderxm/Cyclo)
 
