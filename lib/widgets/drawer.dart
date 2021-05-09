@@ -1,4 +1,5 @@
 import 'package:cyclo/constants/urls.dart';
+import 'package:cyclo/services/url.dart';
 import 'package:cyclo/widgets/SideBarTile.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -157,14 +158,7 @@ final Widget drawer = Drawer(
                     color: Colors.white,
                   ),
                   onPressed: () async {
-                    if (await canLaunch(repoUrl)) {
-                      await launch(
-                        repoUrl,
-                        forceSafariVC: true,
-                        forceWebView: true,
-                        enableJavaScript: true,
-                      );
-                    } else {}
+                    UrlServices.openUrl(repoUrl);
                   }),
             ],
           ),
