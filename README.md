@@ -24,7 +24,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/spiderxm/Cyclo">
-    <img src="https://i.ibb.co/CWX43qD/Whats-App-Image-2021-05-09-at-3-59-19-PM.jpg" alt="Logo" width="80" height="80">
+    <img src="https://i.ibb.co/850YMvw/Whats-App-Image-2021-05-09-at-11-21-57-PM.jpg" alt="Logo" width="80" height="80">
   </a>
 
   <h1 align="center" style="text-transform:uppercase;">Cyclo</h1>
@@ -71,7 +71,7 @@
 ## About The Project
 # Project Cyclo
 
-<img src="https://i.ibb.co/Qf6x6gy/Whats-App-Image-2021-05-09-at-2-57-41-PM.jpg">
+<img src="https://i.ibb.co/tsBgwd7/1620559118768-1.png">
 
 
 ### Built With

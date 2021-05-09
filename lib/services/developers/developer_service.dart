@@ -15,7 +15,6 @@ class DeveloperService {
           "https://www.linkedin.com/in/abstrxtinfinity/",
           "https://github.com/abstrxtInfinity",
           "anantverma2001@gmail.com"),
-      
     ];
   }
 }
