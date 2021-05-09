@@ -81,28 +81,48 @@ final Widget drawer = Drawer(
                 fontSize: 20),
           ),
         ),
-        SizedBox(height: 20,),
+        SizedBox(
+          height: 20,
+        ),
         Expanded(
           child: ListView(
             children: [
               SideBarTile(FontAwesomeIcons.firstOrder, "Your orders"),
-              Divider(height: 1.5,),
+              Divider(
+                height: 1.5,
+              ),
               SideBarTile(Icons.shopping_cart_outlined, "Your Cart"),
-              Divider(height: 1.5,),
+              Divider(
+                height: 1.5,
+              ),
               SideBarTile(FontAwesomeIcons.heart, "Your WishList"),
-              Divider(height: 1.5,),
+              Divider(
+                height: 1.5,
+              ),
               SideBarTile(Icons.category, "Categories"),
-              Divider(height: 1.5,),
+              Divider(
+                height: 1.5,
+              ),
               SideBarTile(FontAwesomeIcons.map, "Address"),
-              Divider(height: 1.5,),
+              Divider(
+                height: 1.5,
+              ),
               SideBarTile(FontAwesomeIcons.language, "Language"),
-              Divider(height: 1.5,),
+              Divider(
+                height: 1.5,
+              ),
               SideBarTile(Icons.settings, "Settings"),
-              Divider(height: 1.5,),
+              Divider(
+                height: 1.5,
+              ),
               SideBarTile(Icons.contact_phone_outlined, "Customer Care"),
-              Divider(height: 1.5,),
+              Divider(
+                height: 1.5,
+              ),
               SideBarTile(Icons.exit_to_app, "Logout"),
-              Divider(height: 1.5,),
+              Divider(
+                height: 1.5,
+              ),
             ],
           ),
         ),
@@ -121,7 +141,10 @@ final Widget drawer = Drawer(
               Text(
                 " Made with ",
                 style: TextStyle(
-                    color: Colors.white, fontSize: 18, letterSpacing: .14, fontFamily: 'AdventPro'),
+                    color: Colors.white,
+                    fontSize: 18,
+                    letterSpacing: .14,
+                    fontFamily: 'AdventPro'),
               ),
               Icon(
                 FontAwesomeIcons.solidHeart,
