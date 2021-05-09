@@ -1,6 +1,5 @@
+import 'package:cyclo/services/toast.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:fluttertoast/fluttertoast.dart';
-import 'package:flutter/material.dart';
 
 class UrlServices {
   static void openUrl(String url) async {
@@ -12,14 +11,7 @@ class UrlServices {
         enableJavaScript: true,
       );
     } else {
-      Fluttertoast.showToast(
-          msg: "There was some issue. Try again later",
-          toastLength: Toast.LENGTH_SHORT,
-          gravity: ToastGravity.SNACKBAR,
-          timeInSecForIosWeb: 1,
-          backgroundColor: Colors.black,
-          textColor: Colors.white,
-          fontSize: 16.0);
+      ToastSender.sendToast("There was some issue. Try again later");
     }
   }
 }

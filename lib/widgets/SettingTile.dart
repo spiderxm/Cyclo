@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
 class SettingTile extends StatelessWidget {
-  final IconData _icon;
+  final IconData icon;
   final String title;
+  String route;
 
-  SettingTile(this._icon, this.title);
+  SettingTile({this.icon, this.title, this.route});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +16,7 @@ class SettingTile extends StatelessWidget {
           CircleAvatar(
             backgroundColor: Color(0xffD3D3D3),
             child: Icon(
-              _icon,
+              icon,
               color: Colors.white,
               size: 25,
               semanticLabel: title,
@@ -31,7 +32,13 @@ class SettingTile extends StatelessWidget {
                     letterSpacing: 0)),
           ),
           Spacer(),
-          IconButton(icon: Icon(Icons.arrow_forward_ios), onPressed: () {})
+          IconButton(
+              icon: Icon(Icons.arrow_forward_ios),
+              onPressed: () {
+                if (route != null) {
+                  Navigator.of(context).pushNamed(route);
+                }
+              })
         ],
       ),
     );

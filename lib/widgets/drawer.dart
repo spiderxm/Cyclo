@@ -1,4 +1,5 @@
 import 'package:cyclo/constants/urls.dart';
+import 'package:cyclo/screens/developers.dart';
 import 'package:cyclo/services/url.dart';
 import 'package:cyclo/widgets/SideBarTile.dart';
 import 'package:flutter/cupertino.dart';
@@ -88,39 +89,50 @@ final Widget drawer = Drawer(
         Expanded(
           child: ListView(
             children: [
-              SideBarTile(FontAwesomeIcons.firstOrder, "Your orders"),
+              SideBarTile(
+                  icon: FontAwesomeIcons.firstOrder, title: "Your orders"),
               Divider(
                 height: 1.5,
               ),
-              SideBarTile(Icons.shopping_cart_outlined, "Your Cart"),
+              SideBarTile(
+                  icon: Icons.shopping_cart_outlined, title: "Your Cart"),
               Divider(
                 height: 1.5,
               ),
-              SideBarTile(FontAwesomeIcons.heart, "Your WishList"),
+              SideBarTile(icon: FontAwesomeIcons.heart, title: "Your WishList"),
               Divider(
                 height: 1.5,
               ),
-              SideBarTile(Icons.category, "Categories"),
+              SideBarTile(icon: Icons.category, title: "Categories"),
               Divider(
                 height: 1.5,
               ),
-              SideBarTile(FontAwesomeIcons.map, "Address"),
+              SideBarTile(icon: FontAwesomeIcons.map, title: "Address"),
               Divider(
                 height: 1.5,
               ),
-              SideBarTile(FontAwesomeIcons.language, "Language"),
+              SideBarTile(icon: FontAwesomeIcons.language, title: "Language"),
               Divider(
                 height: 1.5,
               ),
-              SideBarTile(Icons.settings, "Settings"),
+              SideBarTile(icon: Icons.settings, title: "Settings"),
               Divider(
                 height: 1.5,
               ),
-              SideBarTile(Icons.contact_phone_outlined, "Customer Care"),
+              SideBarTile(
+                  icon: Icons.contact_phone_outlined, title: "Customer Care"),
               Divider(
                 height: 1.5,
               ),
-              SideBarTile(Icons.exit_to_app, "Logout"),
+              SideBarTile(
+                icon: Icons.code,
+                title: "Developers",
+                route: DeveloperScreen.route,
+              ),
+              Divider(
+                height: 1.5,
+              ),
+              SideBarTile(icon: Icons.exit_to_app, title: "Logout"),
               Divider(
                 height: 1.5,
               ),
