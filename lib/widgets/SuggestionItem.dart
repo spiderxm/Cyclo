@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class HomeItem extends StatelessWidget {
+class SuggestionItem extends StatelessWidget {
   final String imageUrl;
   final String name;
   final double price;
 
-  HomeItem({this.imageUrl, this.name, this.price});
+  SuggestionItem({this.imageUrl, this.name, this.price});
 
   @override
   Widget build(BuildContext context) {
@@ -13,6 +13,7 @@ class HomeItem extends StatelessWidget {
       children: [
         Container(
           padding: EdgeInsets.only(top: 15),
+          /** Image of item and button for full detail of product **/
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -45,7 +46,6 @@ class HomeItem extends StatelessWidget {
                     top: -20,
                     right: -20,
                     child: ElevatedButton(
-                      
                       onPressed: () {},
                       autofocus: true,
                       style: ElevatedButton.styleFrom(
@@ -68,20 +68,26 @@ class HomeItem extends StatelessWidget {
                   ),
                 ],
               ),
+              /** Name of item **/
               Padding(
-                padding: const EdgeInsets.only(top: 10,left: 5),
+                padding: const EdgeInsets.only(top: 10, left: 5),
                 child: Text(
                   name.substring(0, name.length > 20 ? 20 : name.length),
                   style: TextStyle(
-                      fontWeight: FontWeight.w600, fontFamily: 'RobotoCondensed'),
+                      fontWeight: FontWeight.w600,
+                      fontFamily: 'RobotoCondensed'),
                   overflow: TextOverflow.fade,
                   maxLines: 1,
                 ),
               ),
+              /** Price of item **/
               Padding(
-                padding: const EdgeInsets.only(left: 5,top: 3),
-
-                child: Text("₹ " + price.toString()),
+                padding: const EdgeInsets.only(left: 5, top: 3),
+                child: Text(
+                  "₹ " + price.toString(),
+                  overflow: TextOverflow.fade,
+                  maxLines: 1,
+                ),
               )
             ],
           ),

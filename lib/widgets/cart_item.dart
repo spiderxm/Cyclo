@@ -5,7 +5,9 @@ import 'package:flutter/material.dart';
 // ignore: must_be_immutable
 class CartItem extends StatelessWidget {
   int index;
+
   CartItem(this.index);
+
   final List<CartItemModel> cartItems = [
     CartItemModel(
       title: 'Modern Helmet H01',
@@ -20,15 +22,19 @@ class CartItem extends StatelessWidget {
       imageUrl: 'assets/images/c1.png',
     ),
   ];
+
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
 
     return Container(
-      height: size.height * 0.15,
+      // height: size.height * 0.15,
       margin: EdgeInsets.only(bottom: 20),
       padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-      color: Color(0xffF5F6F8),
+      decoration: BoxDecoration(
+        color: Color(0xffF5F6F8),
+        borderRadius: BorderRadius.circular(20),
+      ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -46,9 +52,12 @@ class CartItem extends StatelessWidget {
                     offset: Offset(0, 3),
                   ),
                 ]),
-            child: Image.asset(
-              cartItems[index].imageUrl,
-              fit: BoxFit.contain,
+            child: Container(
+              height: size.height * 0.10,
+              child: Image.asset(
+                cartItems[index].imageUrl,
+                fit: BoxFit.contain,
+              ),
             ),
           ),
           Container(
@@ -57,14 +66,17 @@ class CartItem extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  cartItems[index].title.substring(0, cartItems[index].title.length > 20 ? 20 : cartItems[index].title.length),
+                  cartItems[index].title.substring(
+                      0,
+                      cartItems[index].title.length > 20
+                          ? 20
+                          : cartItems[index].title.length),
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w700,
                     color: Colors.black,
-
                   ),
-                  overflow:TextOverflow.fade,
+                  overflow: TextOverflow.fade,
                   maxLines: 1,
                 ),
                 SizedBox(
@@ -77,6 +89,8 @@ class CartItem extends StatelessWidget {
                     color: Color(0xffFF505050),
                     fontSize: 16,
                   ),
+                  overflow: TextOverflow.fade,
+                  maxLines: 1,
                 ),
                 SizedBox(
                   height: 4,
@@ -97,6 +111,7 @@ class CartItem extends StatelessWidget {
                         fontSize: 24,
                         color: Colors.black,
                       ),
+                      overflow: TextOverflow.fade,
                     ),
                     IconButton(
                         icon: Icon(
@@ -107,7 +122,6 @@ class CartItem extends StatelessWidget {
                         onPressed: () {}),
                   ],
                 ),
-
               ],
             ),
           ),
@@ -115,14 +129,16 @@ class CartItem extends StatelessWidget {
             height: 40,
             width: 40,
             decoration: BoxDecoration(
-              border: Border.all( color: Color(0xffB9B9B9)),
-              borderRadius: BorderRadius.all(Radius.circular(50))
-
-            ),
+                border: Border.all(color: Color(0xffB9B9B9)),
+                borderRadius: BorderRadius.all(Radius.circular(50))),
             alignment: Alignment.center,
             child: IconButton(
               tooltip: 'Delete Item',
-              icon: Icon(Icons.delete_outline_rounded,color: Colors.red,size: 22,),
+              icon: Icon(
+                Icons.delete_outline_rounded,
+                color: Colors.red,
+                size: 22,
+              ),
               onPressed: () {},
             ),
           ),

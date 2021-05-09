@@ -53,7 +53,7 @@ class Cart extends StatelessWidget {
               itemBuilder: (context, index) {
                 return CartItem(index);
               },
-              itemCount:2,
+              itemCount: 2,
             ),
           ),
           SizedBox(
@@ -67,20 +67,20 @@ class Cart extends StatelessWidget {
             color: Color(0xffB9B9B9),
             dashPattern: [7],
             child: Container(
-              height: size.height * 0.1,
               padding: EdgeInsets.all(8),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(15)),
                   color: Color(0xffff1f1f1)),
-              child: Row(
+              child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
                     padding: const EdgeInsets.only(top: 5),
-                    child: Column(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(right: 50),
+                          padding: const EdgeInsets.only(right: 0),
                           child: Text(
                             "Total".toUpperCase(),
                             style: TextStyle(
@@ -91,7 +91,6 @@ class Cart extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(height: 5),
                         Padding(
                           padding: const EdgeInsets.only(left: 30),
                           child: Text(
