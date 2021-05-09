@@ -43,26 +43,24 @@ class SuggestionItem extends StatelessWidget {
                         )),
                   ),
                   Positioned(
-                    top: -20,
-                    right: -20,
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      autofocus: true,
-                      style: ElevatedButton.styleFrom(
-                        padding: EdgeInsets.fromLTRB(0, 5, 0, 5),
-                        side: BorderSide(
-                          width: .50,
-                          color: Colors.black,
-                        ),
-                        primary: Colors.white,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(50),
-                        ),
+                    top: -10,
+                    right: -10,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Colors.white,
+                        border: Border.all(color: Colors.black),
                       ),
-                      child: Icon(
-                        Icons.navigate_next,
-                        color: Colors.black,
-                        size: 26,
+                      child: CircleAvatar(
+                        backgroundColor: Colors.white,
+                        child: IconButton(
+                          onPressed: (){},
+                          color: Colors.white,
+                          icon: Icon(
+                            Icons.navigate_next_rounded,
+                            color: Colors.black,
+                          ),
+                        ),
                       ),
                     ),
                   ),

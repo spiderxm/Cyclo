@@ -1,5 +1,6 @@
 import 'package:cyclo/screens/shopping_cart.dart';
 import 'package:cyclo/screens/suggestions.dart';
+import 'package:cyclo/screens/wishlist.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:cyclo/customIcons/custom_drawer_icon.dart';
@@ -56,7 +57,7 @@ class _HomeState extends State<Home> {
           backgroundColor: Color(0xffECEFF4),
           showUnselectedLabels: true,
           showSelectedLabels: false,
-          currentIndex: 0,
+          currentIndex: index,
           items: [
             BottomNavigationBarItem(
                 tooltip: 'Home',
@@ -69,7 +70,7 @@ class _HomeState extends State<Home> {
                   color: Color(0xffFF782D),
                   size: 30,
                 ),
-                label: " Home "),
+                label: "Home"),
             BottomNavigationBarItem(
                 tooltip: 'Shopping Cart',
                 icon: Icon(
@@ -92,7 +93,11 @@ class _HomeState extends State<Home> {
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         floatingActionButton: FloatingActionButton(
           tooltip: 'WishList',
-          onPressed: () {},
+          onPressed: () {
+            Navigator.of(context).push(MaterialPageRoute(builder: (builder) {
+              return WishList();
+            }));
+          },
           elevation: 8,
           backgroundColor: Color(0xff171B27),
           child: Icon(
