@@ -1,4 +1,3 @@
-
 import 'package:cyclo/widgets/HomeItem.dart';
 
 import 'package:flutter/material.dart';
@@ -49,9 +48,8 @@ class Home extends StatelessWidget {
         backgroundColor: Color(0xffECEFF4),
         showUnselectedLabels: true,
         showSelectedLabels: false,
-        currentIndex: 1,
+        currentIndex: 0,
         items: [
-
           BottomNavigationBarItem(
               tooltip: 'Home',
               icon: Icon(
@@ -89,7 +87,6 @@ class Home extends StatelessWidget {
           color: Color(0xffFF782D),
         ),
       ),
-
       body: Container(
         height: MediaQuery.of(context).size.height,
         child: Column(
@@ -99,36 +96,41 @@ class Home extends StatelessWidget {
               height: 10,
             ),
             Container(
-                padding: EdgeInsets.symmetric(vertical: 0, horizontal: 15),
-                child: TextFormField(
-                  readOnly: true,
-                  textInputAction: TextInputAction.next,
-                  onSaved: (value) {},
-                  decoration: InputDecoration(
-                    fillColor: Colors.grey[200],
-                    filled: true,
-                    focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(15)),
-                      borderSide:
-                          new BorderSide(width: 2, color: Colors.grey[200]),
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(15)),
-                      borderSide:
-                          new BorderSide(width: 2, color: Colors.grey[200]),
-                    ),
-                    prefixIcon: Icon(
-                      Icons.search,
-                      color: Colors.grey.withOpacity(0.5),
-                    ),
-                    hintText: "Search",
-                    hintStyle: TextStyle(color: Colors.grey),
+              padding: EdgeInsets.symmetric(vertical: 0, horizontal: 15),
+              child: TextFormField(
+                // readOnly: true,
+                cursorColor: Color(0xffFF782D),
+                textInputAction: TextInputAction.next,
+                onSaved: (value) {},
+                decoration: InputDecoration(
+                  fillColor: Colors.grey[200],
+                  filled: true,
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(15)),
+                    borderSide:
+                        new BorderSide(width: 2, color: Colors.grey[200]),
                   ),
-                  style: TextStyle(
-                      color: Colors.black.withOpacity(0.7),
-                      fontWeight: FontWeight.w500,
-                      fontSize: 16),
-                )),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(15)),
+                    borderSide:
+                        new BorderSide(width: 2, color: Colors.grey[200]),
+                  ),
+                  prefixIcon: Icon(
+                    Icons.search,
+                    color: Colors.grey.withOpacity(0.4),
+                  ),
+                  hintText: "Search",
+                  hintStyle: TextStyle(color: Colors.grey),
+                  contentPadding: EdgeInsets.fromLTRB(5, 10, 5, 0),
+
+                ),
+                style: TextStyle(
+                    color: Colors.black.withOpacity(0.7),
+                    fontWeight: FontWeight.w100,
+                    fontSize: 20),
+              ),
+
+            ),
             Padding(
               padding: const EdgeInsets.all(18.0),
               child: Container(
@@ -151,7 +153,7 @@ class Home extends StatelessWidget {
                 textAlign: TextAlign.left,
                 style: TextStyle(
                     fontSize: 20,
-                    fontFamily: 'Roboto',
+                    fontFamily: 'RobotoCondensed',
                     fontWeight: FontWeight.w500),
               ),
             ),
@@ -195,7 +197,6 @@ class Home extends StatelessWidget {
           ],
         ),
       ),
-
     );
   }
 }

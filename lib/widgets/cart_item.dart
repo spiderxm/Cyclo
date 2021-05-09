@@ -57,12 +57,15 @@ class CartItem extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  cartItems[index].title,
+                  cartItems[index].title.substring(0, cartItems[index].title.length > 20 ? 20 : cartItems[index].title.length),
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w700,
                     color: Colors.black,
+
                   ),
+                  overflow:TextOverflow.fade,
+                  maxLines: 1,
                 ),
                 SizedBox(
                   height: 3,

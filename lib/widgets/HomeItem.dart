@@ -25,6 +25,7 @@ class HomeItem extends StatelessWidget {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
                         // border: Border.all(color: Colors.grey, width: .75),
+                        color: Colors.white,
                         boxShadow: [
                           BoxShadow(
                             color: Colors.grey.withOpacity(0.5),
@@ -41,37 +42,47 @@ class HomeItem extends StatelessWidget {
                         )),
                   ),
                   Positioned(
-                      top: -20,
-                      right: -20,
-                      child: ElevatedButton(
-                          onPressed: () {},
-                          autofocus: true,
-                          style: ElevatedButton.styleFrom(
-                              side: BorderSide(
-                                width: .60,
-                                color: Colors.black,
-                              ),
-                              primary: Colors.white,
-                              shape: RoundedRectangleBorder(
-                                  borderRadius:
-                                      new BorderRadius.circular(150.0))),
-                          child: Icon(
-                            Icons.navigate_next,
-                            color: Colors.black,
-                          )))
+                    top: -20,
+                    right: -20,
+                    child: ElevatedButton(
+                      
+                      onPressed: () {},
+                      autofocus: true,
+                      style: ElevatedButton.styleFrom(
+                        padding: EdgeInsets.fromLTRB(0, 5, 0, 5),
+                        side: BorderSide(
+                          width: .50,
+                          color: Colors.black,
+                        ),
+                        primary: Colors.white,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(50),
+                        ),
+                      ),
+                      child: Icon(
+                        Icons.navigate_next,
+                        color: Colors.black,
+                        size: 26,
+                      ),
+                    ),
+                  ),
                 ],
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 5),
+                padding: const EdgeInsets.only(top: 10,left: 5),
                 child: Text(
                   name.substring(0, name.length > 20 ? 20 : name.length),
                   style: TextStyle(
-                      fontWeight: FontWeight.w600, fontFamily: 'Roboto'),
+                      fontWeight: FontWeight.w600, fontFamily: 'RobotoCondensed'),
                   overflow: TextOverflow.fade,
                   maxLines: 1,
                 ),
               ),
-              Text("₹ " + price.toString())
+              Padding(
+                padding: const EdgeInsets.only(left: 5,top: 3),
+
+                child: Text("₹ " + price.toString()),
+              )
             ],
           ),
         ),
