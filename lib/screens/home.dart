@@ -1,3 +1,4 @@
+import 'package:cyclo/screens/settings.dart';
 import 'package:cyclo/screens/shopping_cart.dart';
 import 'package:cyclo/screens/suggestions.dart';
 import 'package:cyclo/screens/wishlist.dart';
@@ -48,7 +49,11 @@ class _HomeState extends State<Home> {
                 Icons.settings,
                 color: Colors.black,
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(builder: (builder) {
+                  return Settings();
+                }));
+              },
               tooltip: 'Settings',
             )
           ],
