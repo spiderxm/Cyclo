@@ -23,6 +23,14 @@ class DeveloperCard extends StatelessWidget {
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.black,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.5),
+                      spreadRadius: 2,
+                      blurRadius: 10,
+                      offset: Offset(0, 3),
+                    ),
+                  ],
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: Column(
