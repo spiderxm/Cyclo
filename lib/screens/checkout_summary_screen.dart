@@ -35,7 +35,9 @@ class CheckoutSummary extends StatelessWidget {
             primary: Colors.white,
             padding: EdgeInsets.fromLTRB(5, 20, 0, 0),
           ),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pop(context);
+          },
           icon: Icon(
             Icons.arrow_back_ios_rounded,
             color: Colors.black54,

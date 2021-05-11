@@ -32,13 +32,15 @@ class SettingTile extends StatelessWidget {
                     letterSpacing: 0)),
           ),
           Spacer(),
+
           IconButton(
-              icon: Icon(Icons.arrow_forward_ios),
+              icon: Icon(Icons.arrow_forward_ios_rounded),
               onPressed: () {
                 if (route != null) {
                   Navigator.of(context).pushNamed(route);
                 }
               })
+
         ],
       ),
     );
