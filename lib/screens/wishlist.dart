@@ -31,6 +31,7 @@ class WishList extends StatelessWidget {
           icon: Icon(
             Icons.navigate_before_outlined,
             color: Colors.black,
+            size: 28,
           ),
           onPressed: () {
             Navigator.of(context).pop();

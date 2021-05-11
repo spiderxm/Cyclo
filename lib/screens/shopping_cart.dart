@@ -1,3 +1,4 @@
+import 'package:cyclo/screens/checkout_summary_screen.dart';
 import 'package:cyclo/widgets/cart_item.dart';
 import 'package:cyclo/widgets/dashed_line.dart';
 import 'package:dotted_border/dotted_border.dart';
@@ -107,7 +108,11 @@ class Cart extends StatelessWidget {
                     ),
                   ),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(builder: (_) => CheckoutSummary()),
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
                       shape: new RoundedRectangleBorder(
                         borderRadius: new BorderRadius.circular(15),

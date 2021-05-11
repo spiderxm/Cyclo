@@ -31,7 +31,7 @@ class SettingTile extends StatelessWidget {
                     letterSpacing: 0)),
           ),
           Spacer(),
-          IconButton(icon: Icon(Icons.arrow_forward_ios), onPressed: () {})
+          IconButton(icon: Icon(Icons.arrow_forward_ios_rounded), onPressed: () {})
         ],
       ),
     );
