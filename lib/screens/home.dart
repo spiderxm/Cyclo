@@ -2,6 +2,7 @@ import 'package:cyclo/screens/settings.dart';
 import 'package:cyclo/screens/shopping_cart.dart';
 import 'package:cyclo/screens/suggestions.dart';
 import 'package:cyclo/screens/wishlist.dart';
+import 'package:cyclo/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:cyclo/customIcons/custom_drawer_icon.dart';
@@ -14,10 +15,13 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int index = 0;
   final List<Widget> _children = [Suggestion(), Cart()];
+  GlobalKey<ScaffoldState> _key = GlobalKey();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        key: _key,
+        drawer: drawer,
         backgroundColor: Colors.white,
         appBar: AppBar(
           elevation: 0,
@@ -29,7 +33,9 @@ class _HomeState extends State<Home> {
               size: 18,
               color: Colors.black,
             ),
-            onPressed: () {},
+            onPressed: () {
+              _key.currentState.openDrawer();
+            },
             tooltip: 'Side Drawer',
           ),
           title: Center(
@@ -50,7 +56,8 @@ class _HomeState extends State<Home> {
                 color: Colors.black,
               ),
               onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(builder: (builder) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (builder) {
                   return Settings();
                 }));
               },

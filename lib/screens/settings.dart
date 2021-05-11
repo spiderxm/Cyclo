@@ -1,3 +1,4 @@
+import 'package:cyclo/screens/developers.dart';
 import 'package:cyclo/widgets/SettingTile.dart';
 import 'package:cyclo/widgets/dashed_line.dart';
 import 'package:flutter/material.dart';
@@ -113,9 +114,10 @@ class Settings extends StatelessWidget {
             Expanded(
               child: ListView(
                 children: [
-                  SettingTile(Icons.notifications, "Notifications"),
-                  SettingTile(Icons.lock, "Privacy"),
-                  SettingTile(Icons.security, "Security"),
+                  SettingTile(
+                      icon: Icons.notifications, title: "Notifications"),
+                  SettingTile(icon: Icons.lock, title: "Privacy"),
+                  SettingTile(icon: Icons.security, title: "Security"),
                   Padding(
                     padding: const EdgeInsets.symmetric(
                         horizontal: 30, vertical: 10),
@@ -124,10 +126,12 @@ class Settings extends StatelessWidget {
                       color: Colors.grey,
                     ),
                   ),
-                  SettingTile(Icons.email_outlined, "Email"),
-                  SettingTile(Icons.phone, "Mobile Number"),
-                  SettingTile(Icons.map_outlined, "Address Details"),
-                  SettingTile(Icons.wb_sunny_outlined, "Display Mode"),
+                  SettingTile(icon: Icons.email_outlined, title: "Email"),
+                  SettingTile(icon: Icons.phone, title: "Mobile Number"),
+                  SettingTile(
+                      icon: Icons.map_outlined, title: "Address Details"),
+                  SettingTile(
+                      icon: Icons.wb_sunny_outlined, title: "Display Mode"),
                   Padding(
                     padding: const EdgeInsets.symmetric(
                         horizontal: 30, vertical: 10),
@@ -136,8 +140,10 @@ class Settings extends StatelessWidget {
                       color: Colors.grey,
                     ),
                   ),
-                  SettingTile(Icons.contact_phone_outlined, "Contact Us"),
-                  SettingTile(Icons.menu_book, "Terms Of Service"),
+                  SettingTile(
+                      icon: Icons.contact_phone_outlined, title: "Contact Us"),
+                  SettingTile(icon: Icons.menu_book, title: "Terms Of Service"),
+                  SettingTile(icon: Icons.code, title: "Developers", route: DeveloperScreen.route),
                 ],
               ),
             )
