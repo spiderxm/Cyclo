@@ -1,5 +1,5 @@
 import 'package:cyclo/screens/settings.dart';
-import 'package:cyclo/screens/shopping_cart.dart';
+import 'package:cyclo/screens/shoppingCart.dart';
 import 'package:cyclo/screens/suggestions.dart';
 import 'package:cyclo/screens/wishlist.dart';
 import 'package:cyclo/widgets/drawer.dart';

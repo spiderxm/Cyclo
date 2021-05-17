@@ -1,7 +1,7 @@
 import 'package:cyclo/screens/developers.dart';
-import 'package:cyclo/screens/privacy_policy.dart';
-import 'package:cyclo/widgets/SettingTile.dart';
-import 'package:cyclo/widgets/dashed_line.dart';
+import 'package:cyclo/screens/privacyPolicy.dart';
+import 'package:cyclo/widgets/settingTile.dart';
+import 'package:cyclo/widgets/dashedLine.dart';
 import 'package:flutter/material.dart';
 
 class Settings extends StatelessWidget {

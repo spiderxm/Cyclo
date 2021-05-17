@@ -1,4 +1,5 @@
-import 'package:cyclo/screens/privacy_policy.dart';
+import 'package:cyclo/screens/checkoutSummary.dart';
+import 'package:cyclo/screens/privacyPolicy.dart';
 import 'package:flutter/material.dart';
 import 'screens/home.dart';
 import 'package:cyclo/screens/developers.dart';

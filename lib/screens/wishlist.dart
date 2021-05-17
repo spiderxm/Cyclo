@@ -1,6 +1,6 @@
 import 'package:cyclo/customIcons/custom_drawer_icon.dart';
-import 'package:cyclo/widgets/WishListItem.dart';
-import 'package:cyclo/widgets/dashed_line.dart';
+import 'package:cyclo/widgets/wishListItem.dart';
+import 'package:cyclo/widgets/dashedLine.dart';
 import 'package:flutter/material.dart';
 
 final List items = [

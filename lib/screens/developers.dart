@@ -1,6 +1,6 @@
 import 'package:cyclo/models/developer.dart';
-import 'package:cyclo/services/developers/developer_service.dart';
-import 'package:cyclo/widgets/DeveloperItem.dart';
+import 'package:cyclo/services/developers/developerService.dart';
+import 'package:cyclo/widgets/developerItem.dart';
 import 'package:flutter/material.dart';
 
 class DeveloperScreen extends StatelessWidget {
