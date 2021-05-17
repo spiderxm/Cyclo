@@ -1,3 +1,4 @@
+import 'package:cyclo/screens/privacy_policy.dart';
 import 'package:flutter/material.dart';
 import 'screens/home.dart';
 import 'package:cyclo/screens/developers.dart';
@@ -17,7 +18,10 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       home: Home(),
-      routes: {DeveloperScreen.route: (ctx) => DeveloperScreen()},
+      routes: {
+        DeveloperScreen.route: (ctx) => DeveloperScreen(),
+        PrivacyPolicyScreen.route: (ctx) => PrivacyPolicyScreen()
+      },
     );
   }
 }

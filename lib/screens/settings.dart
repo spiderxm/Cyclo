@@ -1,4 +1,5 @@
 import 'package:cyclo/screens/developers.dart';
+import 'package:cyclo/screens/privacy_policy.dart';
 import 'package:cyclo/widgets/SettingTile.dart';
 import 'package:cyclo/widgets/dashed_line.dart';
 import 'package:flutter/material.dart';
@@ -151,8 +152,15 @@ class Settings extends StatelessWidget {
                   ),
                   SettingTile(
                       icon: Icons.contact_phone_outlined, title: "Contact Us"),
-                  SettingTile(icon: Icons.menu_book, title: "Terms Of Service"),
-                  SettingTile(icon: Icons.code, title: "Developers", route: DeveloperScreen.route),
+                  SettingTile(
+                    icon: Icons.menu_book,
+                    title: "Privacy Policy",
+                    route: PrivacyPolicyScreen.route,
+                  ),
+                  SettingTile(
+                      icon: Icons.code,
+                      title: "Developers",
+                      route: DeveloperScreen.route),
                 ],
               ),
             )
