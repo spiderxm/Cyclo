@@ -1,3 +1,4 @@
+import 'package:cyclo/screens/contactUs.dart';
 import 'package:cyclo/screens/developers.dart';
 import 'package:cyclo/screens/privacyPolicy.dart';
 import 'package:cyclo/widgets/settingTile.dart';
@@ -18,7 +19,6 @@ class Settings extends StatelessWidget {
             Icons.arrow_back_ios_rounded,
             color: Colors.black,
             size: 25,
-
           ),
           onPressed: () {
             Navigator.of(context).pop();
@@ -34,7 +34,6 @@ class Settings extends StatelessWidget {
               color: Colors.black,
               fontSize: 35),
         ),
-
       ),
       body: SafeArea(
         child: Container(
@@ -101,7 +100,7 @@ class Settings extends StatelessWidget {
               height: 30,
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 18.0,bottom: 10),
+              padding: const EdgeInsets.only(left: 18.0, bottom: 10),
               child: Text(
                 "SETTINGS",
                 style: TextStyle(
@@ -142,7 +141,10 @@ class Settings extends StatelessWidget {
                     ),
                   ),
                   SettingTile(
-                      icon: Icons.contact_phone_outlined, title: "Contact Us"),
+                    icon: Icons.contact_phone_outlined,
+                    title: "Contact Us",
+                    route: ContactUsScreen.route
+                  ),
                   SettingTile(
                     icon: Icons.menu_book,
                     title: "Privacy Policy",
