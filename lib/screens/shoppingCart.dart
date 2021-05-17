@@ -1,6 +1,6 @@
-import 'package:cyclo/screens/checkout_summary_screen.dart';
-import 'package:cyclo/widgets/cart_item.dart';
-import 'package:cyclo/widgets/dashed_line.dart';
+import 'package:cyclo/screens/checkoutSummary.dart';
+import 'package:cyclo/widgets/cartItem.dart';
+import 'package:cyclo/widgets/dashedLine.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
