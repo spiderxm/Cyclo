@@ -14,4 +14,24 @@ class UrlServices {
       ToastSender.sendToast("There was some issue. Try again later");
     }
   }
+  static void openEmail(String uri) async {
+    if (await canLaunch(uri)) {
+      await launch(
+        uri,
+      );
+    } else {
+      ToastSender.sendToast("There was some issue. Try again later");
+    }
+  }
+
+
+  static void openCall(String uri) async {
+    if (await canLaunch(uri)) {
+      await launch(
+        uri,
+      );
+    } else {
+      ToastSender.sendToast("There was some issue. Try again later");
+    }
+  }
 }
