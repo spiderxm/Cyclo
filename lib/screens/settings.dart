@@ -15,35 +15,26 @@ class Settings extends StatelessWidget {
         bottomOpacity: 0,
         leading: IconButton(
           icon: Icon(
-            Icons.navigate_before_outlined,
+            Icons.arrow_back_ios_rounded,
             color: Colors.black,
+            size: 25,
+
           ),
           onPressed: () {
             Navigator.of(context).pop();
           },
           tooltip: 'Back',
         ),
-        title: Center(
-          child: Text(
-            "CYCLo",
-            style: TextStyle(
-                fontFamily: 'AdventPro',
-                fontWeight: FontWeight.w500,
-                color: Colors.black,
-                fontSize: 35),
-            textAlign: TextAlign.center,
-          ),
-        ),
-        actions: [
-          IconButton(
-            icon: Icon(
-              Icons.settings,
+        centerTitle: true,
+        title: Text(
+          "CYCLo",
+          style: TextStyle(
+              fontFamily: 'AdventPro',
+              fontWeight: FontWeight.w500,
               color: Colors.black,
-            ),
-            onPressed: () {},
-            tooltip: 'Settings',
-          )
-        ],
+              fontSize: 35),
+        ),
+
       ),
       body: SafeArea(
         child: Container(
@@ -110,7 +101,7 @@ class Settings extends StatelessWidget {
               height: 30,
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 18.0),
+              padding: const EdgeInsets.only(left: 18.0,bottom: 10),
               child: Text(
                 "SETTINGS",
                 style: TextStyle(
