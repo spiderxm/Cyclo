@@ -1,4 +1,3 @@
-import 'package:cyclo/screens/checkoutSummary.dart';
 import 'package:cyclo/screens/contactUs.dart';
 import 'package:cyclo/screens/privacyPolicy.dart';
 import 'package:flutter/material.dart';
