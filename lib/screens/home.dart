@@ -2,6 +2,7 @@ import 'package:cyclo/screens/settings.dart';
 import 'package:cyclo/screens/shoppingCart.dart';
 import 'package:cyclo/screens/suggestions.dart';
 import 'package:cyclo/screens/wishlist.dart';
+import 'package:cyclo/services/deviceDetails/deviceDetailService.dart';
 import 'package:cyclo/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -16,9 +17,12 @@ class _HomeState extends State<Home> {
   int index = 0;
   final List<Widget> _children = [Suggestion(), Cart()];
   GlobalKey<ScaffoldState> _key = GlobalKey();
-
+  void wait()async{
+    print(await DeviceDetails.getDeviceDetails());
+  }
   @override
   Widget build(BuildContext context) {
+    wait();
     return Scaffold(
         key: _key,
         drawer: drawer,
