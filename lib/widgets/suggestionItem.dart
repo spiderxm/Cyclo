@@ -12,10 +12,14 @@ class SuggestionItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return FlatButton(
       padding: EdgeInsets.all(0),
+      splashColor: Colors.white,
+      focusColor: Colors.white,
+      highlightColor: Colors.white,
       onPressed: () {
         Navigator.of(context)
             .push(MaterialPageRoute(builder: (ctx) => ItemDetail()));
       },
+
       child: Column(
         children: [
           Container(
@@ -61,7 +65,10 @@ class SuggestionItem extends StatelessWidget {
                         child: CircleAvatar(
                           backgroundColor: Colors.white,
                           child: IconButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.of(context)
+                                  .push(MaterialPageRoute(builder: (ctx) => ItemDetail()));
+                            },
                             color: Colors.white,
                             icon: Icon(
                               Icons.navigate_next_rounded,
