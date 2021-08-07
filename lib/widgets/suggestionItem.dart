@@ -1,4 +1,4 @@
-import 'package:cyclo/screens/itemDetail.dart';
+import 'package:cyclo/screens/ItemDetail.dart';
 import 'package:flutter/material.dart';
 
 class SuggestionItem extends StatelessWidget {
