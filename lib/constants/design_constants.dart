@@ -1,3 +1,20 @@
 import 'package:flutter/material.dart';
 
-const inputDecoration = InputDecoration();
+final inputDecoration =InputDecoration(
+  fillColor: Colors.grey.shade100,
+  filled: true,
+  focusedBorder: OutlineInputBorder(
+    borderRadius:
+    BorderRadius.all(Radius.circular(20)),
+    borderSide: new BorderSide(
+      width: 2,
+      color: Color(0xffff8400),
+    ),
+  ),
+  enabledBorder: OutlineInputBorder(
+    borderRadius:
+    BorderRadius.all(Radius.circular(20)),
+    borderSide: new BorderSide(
+        width: 2, color: Colors.white),
+  ),
+);
