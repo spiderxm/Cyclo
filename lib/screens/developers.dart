@@ -17,7 +17,7 @@ class DeveloperScreen extends StatelessWidget {
           bottomOpacity: 0,
           leading: IconButton(
             icon: Icon(
-              Icons.navigate_before_outlined,
+              Icons.arrow_back_ios_rounded,
               color: Colors.black,
             ),
             onPressed: () {

@@ -22,11 +22,13 @@ class SideBarTile extends StatelessWidget {
             CircleAvatar(
               backgroundColor: Color(0xffD3D3D3),
               maxRadius: 25,
+
               child: FittedBox(
                 child: Icon(
+
                   icon,
                   color: Colors.white,
-                  size: 25,
+                  size: 20,
                   semanticLabel: title,
                 ),
               ),

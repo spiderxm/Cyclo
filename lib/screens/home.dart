@@ -56,10 +56,11 @@ class _HomeState extends State<Home> {
                 color: Colors.black,
               ),
               onPressed: () {
-                Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (builder) {
-                  return Settings();
-                }));
+                Navigator.pushNamed(context, Settings.route);
+                // Navigator.of(context)
+                //     .push(MaterialPageRoute(builder: (builder) {
+                //   return Settings();
+                // }));
               },
               tooltip: 'Settings',
             )
@@ -106,9 +107,7 @@ class _HomeState extends State<Home> {
         floatingActionButton: FloatingActionButton(
           tooltip: 'WishList',
           onPressed: () {
-            Navigator.of(context).push(MaterialPageRoute(builder: (builder) {
-              return WishList();
-            }));
+            Navigator.pushNamed(context, WishList.route );
           },
           elevation: 8,
           backgroundColor: Color(0xff171B27),

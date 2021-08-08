@@ -15,7 +15,7 @@ class PrivacyPolicyScreen extends StatelessWidget {
         bottomOpacity: 0,
         leading: IconButton(
           icon: Icon(
-            Icons.navigate_before_outlined,
+            Icons.arrow_back_ios_rounded,
             color: Colors.black,
           ),
           onPressed: () {
@@ -23,16 +23,14 @@ class PrivacyPolicyScreen extends StatelessWidget {
           },
           tooltip: 'Back',
         ),
-        title: Center(
-          child: Text(
-            "Privacy Policy",
-            style: TextStyle(
-                fontFamily: 'AdventPro',
-                fontWeight: FontWeight.w500,
-                color: Colors.black,
-                fontSize: 35),
-            textAlign: TextAlign.center,
-          ),
+        centerTitle: true,
+        title: Text(
+          "Privacy Policy",
+          style: TextStyle(
+              fontFamily: 'AdventPro',
+              fontWeight: FontWeight.w500,
+              color: Colors.black,
+              fontSize: 35),
         ),
       ),
       body: SafeArea(
