@@ -1,18 +1,18 @@
 import 'package:cyclo/constants/urls.dart';
 import 'package:cyclo/screens/developers.dart';
+import 'package:cyclo/screens/settings.dart';
 import 'package:cyclo/services/url.dart';
 import 'package:cyclo/widgets/sideBarTile.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 final Widget drawer = Drawer(
   child: SafeArea(
     child: Column(
       children: [
         Padding(
-          padding: const EdgeInsets.only(top: 10),
+          padding: const EdgeInsets.symmetric(vertical: 20),
           child: Center(
             child: Container(
               width: 80,
@@ -94,15 +94,19 @@ final Widget drawer = Drawer(
               Divider(
                 height: 1.5,
               ),
-              SideBarTile(
-                  icon: Icons.shopping_cart_outlined, title: "Your Cart"),
-              Divider(
-                height: 1.5,
-              ),
-              SideBarTile(icon: FontAwesomeIcons.heart, title: "Your WishList"),
-              Divider(
-                height: 1.5,
-              ),
+              // SideBarTile(
+              //     icon: Icons.shopping_cart_outlined, title: "Your Cart"),
+              // Divider(
+              //   height: 1.5,
+              // ),
+              // SideBarTile(
+              //   icon: FontAwesomeIcons.heart,
+              //   title: "Your WishList",
+              //   route: WishList.route,
+              // ),
+              // Divider(
+              //   height: 1.5,
+              // ),
               SideBarTile(icon: Icons.category, title: "Categories"),
               Divider(
                 height: 1.5,
@@ -115,7 +119,11 @@ final Widget drawer = Drawer(
               Divider(
                 height: 1.5,
               ),
-              SideBarTile(icon: Icons.settings, title: "Settings"),
+              SideBarTile(
+                icon: Icons.settings,
+                title: "Settings",
+                route: Settings.route,
+              ),
               Divider(
                 height: 1.5,
               ),
@@ -149,7 +157,7 @@ final Widget drawer = Drawer(
           child: Row(
             children: [
               SizedBox(
-                width: 5,
+                width: 30,
               ),
               Text(
                 " Made with ",
@@ -161,7 +169,7 @@ final Widget drawer = Drawer(
               ),
               Icon(
                 FontAwesomeIcons.solidHeart,
-                color: Colors.red,
+                color: Color(0xffff0000),
               ),
               Spacer(),
               IconButton(

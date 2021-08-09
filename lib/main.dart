@@ -1,6 +1,8 @@
 import 'package:cyclo/screens/checkoutSummary.dart';
 import 'package:cyclo/screens/contactUs.dart';
 import 'package:cyclo/screens/privacyPolicy.dart';
+import 'package:cyclo/screens/settings.dart';
+import 'package:cyclo/screens/wishlist.dart';
 import 'package:flutter/material.dart';
 import 'screens/home.dart';
 import 'package:cyclo/screens/developers.dart';
@@ -23,7 +25,9 @@ class MyApp extends StatelessWidget {
       routes: {
         DeveloperScreen.route: (ctx) => DeveloperScreen(),
         PrivacyPolicyScreen.route: (ctx) => PrivacyPolicyScreen(),
-        ContactUsScreen.route: (ctx) => ContactUsScreen()
+        ContactUsScreen.route: (ctx) => ContactUsScreen(),
+        Settings.route: (ctx) => Settings(),
+        WishList.route: (ctx) => WishList(),
       },
     );
   }

@@ -2,10 +2,10 @@ import 'package:cyclo/screens/contactUs.dart';
 import 'package:cyclo/screens/developers.dart';
 import 'package:cyclo/screens/privacyPolicy.dart';
 import 'package:cyclo/widgets/settingTile.dart';
-import 'package:cyclo/widgets/dashedLine.dart';
 import 'package:flutter/material.dart';
 
 class Settings extends StatelessWidget {
+  static String route  = '/settings' ;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
