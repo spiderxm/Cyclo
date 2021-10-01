@@ -1,4 +1,3 @@
-import 'package:cyclo/customIcons/custom_drawer_icon.dart';
 import 'package:cyclo/widgets/wishListItem.dart';
 import 'package:cyclo/widgets/dashedLine.dart';
 import 'package:flutter/material.dart';
@@ -19,6 +18,7 @@ final List items = [
 ];
 
 class WishList extends StatelessWidget {
+  static String route = '/wishlist';
   @override
   Widget build(BuildContext context) {
     return Scaffold(

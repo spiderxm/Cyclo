@@ -1,5 +1,6 @@
 import 'package:cyclo/services/url.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:line_icons/line_icons.dart';
 
 class ContactUsScreen extends StatelessWidget {
@@ -13,9 +14,10 @@ class ContactUsScreen extends StatelessWidget {
         elevation: 0,
         backgroundColor: Colors.white,
         bottomOpacity: 0,
+        centerTitle: true,
         leading: IconButton(
           icon: Icon(
-            Icons.navigate_before_outlined,
+            Icons.arrow_back_ios_rounded,
             color: Colors.black,
           ),
           onPressed: () {
@@ -23,16 +25,13 @@ class ContactUsScreen extends StatelessWidget {
           },
           tooltip: 'Back',
         ),
-        title: Center(
-          child: Text(
-            "Contact us",
-            style: TextStyle(
-                fontFamily: 'AdventPro',
-                fontWeight: FontWeight.w500,
-                color: Colors.black,
-                fontSize: 35),
-            textAlign: TextAlign.center,
-          ),
+        title: Text(
+          "Contact us",
+          style: TextStyle(
+              fontFamily: 'AdventPro',
+              fontWeight: FontWeight.w500,
+              color: Colors.black,
+              fontSize: 35),
         ),
       ),
       body: Container(
@@ -62,15 +61,17 @@ class ContactUsScreen extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start  ,
                               children: [
                                 Text(
                                   "Write us at",
                                   style: TextStyle(
-                                      fontFamily: 'AdventPro',
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 18),
+                                    fontFamily: 'AdventPro',
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 18,
+                                    letterSpacing: 2,
+                                  ),
                                 ),
                                 Text("contactcycloprime@gmail.com",
                                     style: TextStyle(
@@ -105,7 +106,7 @@ class ContactUsScreen extends StatelessWidget {
                                 style: TextStyle(
                                     fontFamily: 'AdventPro',
                                     fontWeight: FontWeight.w600,
-                                    fontSize: 18),
+                                    fontSize: 18,letterSpacing: 2,),
                               ),
                               Spacer(),
                             ],
@@ -148,7 +149,7 @@ class ContactUsScreen extends StatelessWidget {
                                       fontFamily: 'AdventPro',
                                       color: Colors.white,
                                       fontWeight: FontWeight.w600,
-                                      fontSize: 18),
+                                      fontSize: 18,letterSpacing: 2,),
                                 ),
                                 Text("+91 xxxxxxxxxx",
                                     style: TextStyle(
@@ -182,7 +183,7 @@ class ContactUsScreen extends StatelessWidget {
                                 style: TextStyle(
                                     fontFamily: 'AdventPro',
                                     fontWeight: FontWeight.w600,
-                                    fontSize: 18),
+                                    fontSize: 18,letterSpacing: 2,),
                               ),
                               Spacer(),
                             ],
